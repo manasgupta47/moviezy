@@ -7,12 +7,8 @@ $sql = "CREATE TABLE `users` (
   `password` varchar(100) NOT NULL
 )";
 
-$host='localhost';
-$username='root';
-$password='';
-$dbase='test_sample';
 
-$conn = mysqli_connect($host,$username,$password,$dbase);
+$db = mysqli_connect('sql6.freemysqlhosting.net', 'sql6505626', 'z9y529fh3w', 'sql6505626');
 
 if($conn){
     echo "Successfully connected to server";
